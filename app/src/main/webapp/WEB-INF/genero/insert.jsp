@@ -7,9 +7,9 @@
         <link href="/css/bootstrap.min.css" rel="stylesheet"/>
     </head>
     <body>
-        <div class="container"></div>
-        <h1>Gêneros</h1>
-        <form action = "/genero/insert"  method ="post"></form>
+        <div class="container">
+        <h1>Novo Gênero</h1>
+        <form action = "/genero/insert"  method ="post">
         <div class= "form-group">
             <label form="nome"> Nome: </label>
             <input type="text" name="nome" class="form-control"/>
