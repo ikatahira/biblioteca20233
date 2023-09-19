@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<@ taglib uri="jakarta.tags.core" prefix="c" %>
+<%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -8,7 +8,7 @@
         <link href="/css/bootstrap.min.css" rel="stylesheet"/>
     </head>
     <body>
-        <div class="container"></div>
+        <div class="container">
         <h1>Gêneros</h1>
         <a href ="/genero/insert" class="btn btn-primary"> Novo Gênero</a>
         <table class ="table">
