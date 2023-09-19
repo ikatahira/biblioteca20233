@@ -68,7 +68,7 @@ public String update(
 
 }
 @RequestMapping("/delete")
-public String delete(Model model, RequestParam("id") int id){
+public String delete(Model model, @RequestParam("id") int id){
    Optional<Genero> genero = generoRepo.findById(id);
    
    if(genero.isPresent()){
@@ -76,4 +76,6 @@ public String delete(Model model, RequestParam("id") int id){
     return "/genero/delete";
 }
 return "redirect:/genero/list";
+}
+
 }
