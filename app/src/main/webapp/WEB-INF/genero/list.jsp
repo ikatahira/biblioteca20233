@@ -27,7 +27,7 @@
                     </td>
                 </tr>
 
-            </c: forEach>
+            </c:forEach>
 
         </table>
     </div>
