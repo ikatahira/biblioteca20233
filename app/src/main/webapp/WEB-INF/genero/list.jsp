@@ -17,7 +17,7 @@
                 <th>Nome</th>
                 <th>&nbsp;</th>
             </tr>
-            <c: forEach var = "item" Items ="${generos}">
+            <c:forEach var = "item" Items ="${generos}">
                 <tr>
                     <td>${item.id}</td>
                     <td>${item.nome}</td>
