@@ -43,3 +43,4 @@ public String insert(@RequestParam("nome") String nome){
 
     return "redirect:/genero/list";
 }
+}
