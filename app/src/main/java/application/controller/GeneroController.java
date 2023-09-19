@@ -67,4 +67,13 @@ public String update(
     return "redirect:/genero/list";
 
 }
+@RequestMapping("/delete")
+public String delete(Model model, RequestParam("id") int id){
+   Optional<Genero> genero = generoRepo.findById(id);
+   
+   if(genero.isPresent()){
+    model.addAttribute("genero", genero.get());
+    return "/genero/delete";
+}
+return "redirect:/genero/list";
 }
