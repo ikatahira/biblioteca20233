@@ -12,8 +12,8 @@ import application.model.GeneroRepository;
 
 
 @Controller
-@RequestMapping("\genero")
-public class GeneroCrontroller {
+@RequestMapping("/genero")
+public class GeneroController {
     @Autowired
     private GeneroRepository generoRepo;
 
