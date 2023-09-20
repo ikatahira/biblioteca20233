@@ -24,8 +24,7 @@ public class GeneroController {
     public String list(Model model){
         model.addAttribute("generos", generoRepo.findAll());
         return "/genero/list";
-
-    
+  
     
 }
 
@@ -45,18 +44,19 @@ public String insert(@RequestParam("nome") String nome){
 
     return "redirect:/genero/list";
 }
+
 @RequestMapping("/update")
 
 public  String update(){
     return "/genero/update";
 }
 
-
-public String update(Model model, @RequestMapping("id") int id){
+@RequestMapping(value ="/update", method = RequestMethod.POST)
+public String update(@RequestParam("id") int id, @RequestParam("nome") String nome ){
  Optional<Genero> genero = generoRepo.findById(id);   
     if(genero.isPresent()){
-        model.addAttribute("genero", genero.get());
-        return "/genero/update";
+         genero.get().setNome(nome);
+         generoRepo.save(genero.get());
     }
     return "redirect:/genero/list";
 }
