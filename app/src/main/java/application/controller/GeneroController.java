@@ -46,6 +46,12 @@ public String insert(@RequestParam("nome") String nome){
     return "redirect:/genero/list";
 }
 @RequestMapping("/update")
+
+public  String update(){
+    return "/genero/update";
+}
+
+
 public String update(Model model, @RequestMapping("id") int id){
  Optional<Genero> genero = generoRepo.findById(id);   
     if(genero.isPresent()){
