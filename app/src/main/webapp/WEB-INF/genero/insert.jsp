@@ -1,4 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -9,9 +12,9 @@
     <body>
         <div class="container">
         <h1>Novo Gênero</h1>
-        <form action = "/genero/insert"  method ="post">
+        <form action="/genero/insert"  method ="post">
         <div class= "form-group">
-            <label form="nome"> Nome: </label>
+            <label for="nome"> Nome: </label>
             <input type="text" name="nome" class="form-control"/>
 
         </div>
