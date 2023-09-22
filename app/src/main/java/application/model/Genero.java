@@ -12,7 +12,7 @@ public class Genero{
 @GeneratedValue(strategy=GenerationType.IDENTITY)
 private int id;
 private String nome;
-public void setId(int id) {
+public void getId(int id) {
     this.id = id;
 }public int getId() {
     return id;
