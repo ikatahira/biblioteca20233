@@ -35,8 +35,7 @@ public String insert(){
 }
 
 
-@RequestMapping
-(value ="/insert", method = RequestMethod.POST)
+@RequestMapping(value ="/insert", method = RequestMethod.POST)
 public String insert(@RequestParam("nome") String nome){
     Genero genero =new Genero();
     genero.setNome(nome);
@@ -45,6 +44,7 @@ public String insert(@RequestParam("nome") String nome){
 
     return "redirect:/genero/list";
 }
+
 
 @RequestMapping("/update")
 
